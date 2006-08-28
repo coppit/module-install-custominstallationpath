@@ -1,0 +1,19 @@
+Module::Install:CustomInstallationPath 0.10 released
+
+Description:
+- Module::Install::CustomInstallationPath is a Module::Install extension that
+  allows the user to interactively specify custom installation directories
+
+Download:
+- You can download the module from CPAN:
+  http://www.cpan.org/authors/id/D/DC/DCOPPIT/Module-Install-CustomInstallationPath-0.10.tar.gz
+- Until the file propagates to the mirrors, you can use the following URL:
+  http://coppit.org/code/Module-Install-CustomInstallationPath-0.10.tar.gz
+
+Changes:
+- This is the first release
+
+See the README for additional notes.
+
+Regards,
+David
