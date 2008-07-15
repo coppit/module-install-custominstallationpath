@@ -1,6 +1,7 @@
 package Module::Install::CustomInstallationPath;
 
 use strict;
+use 5.004;
 use File::HomeDir;
 use Config;
 
@@ -9,16 +10,14 @@ use vars qw( @ISA $VERSION );
 use Module::Install::Base;
 @ISA = qw( Module::Install::Base );
 
-$VERSION = sprintf "%d.%02d%02d", q/0.10.30/ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d%02d", q/0.10.40/ =~ /(\d+)/g;
 
 # ---------------------------------------------------------------------------
 
-sub Check_Custom_Installation
+sub check_custom_installation
 {
   my $self = shift;
 
-  # Module::Install says it requires perl 5.004
-  $self->requires( perl => '5.004' );
   $self->include_deps('File::HomeDir',0);
 
   return if (grep {/^PREFIX=/} @ARGV) || (grep {/^INSTALLDIRS=/} @ARGV);
@@ -49,8 +48,7 @@ sub Check_Custom_Installation
 
 =head1 NAME
 
-Module::Install::CustomInstallationPath - A Module::Install extension that
-allows the user to interactively specify custom installation directories
+Module::Install::CustomInstallationPath - A Module::Install extension that allows the user to interactively specify custom installation directories
 
 
 =head1 SYNOPSIS
@@ -58,7 +56,7 @@ allows the user to interactively specify custom installation directories
   In Makefile.PL:
     use inc::Module::Install;
     ...
-    Check_Custom_Installation();
+    check_custom_installation();
 
 
 =head1 DESCRIPTION
@@ -84,7 +82,7 @@ maintainers also want non-interactive installs.
 
 =over 4
 
-=item Check_Custom_Installation()
+=item check_custom_installation()
 
 Imported into Makefile.PL by Module::Install when invoked. This causes the
 prompts to be displayed and @ARGV to be updated (if necessary).
@@ -92,15 +90,20 @@ prompts to be displayed and @ARGV to be updated (if necessary).
 =back
 
 
-head1 AUTHOR
-
-David Coppit <david@coppit.org>.
 
 
 =head1 LICENSE
 
-This software is distributed under the terms of the GPL. See the file
-"LICENSE" for more information.
+This code is distributed under the GNU General Public License (GPL). See the
+file LICENSE in the distribution, http://www.opensource.org/gpl-license.html,
+and http://www.opensource.org/.
+
+=head1 AUTHOR
+
+David Coppit E<lt>david@coppit.orgE<gt>
+
+=head1 SEE ALSO
+
+L<Module::Install>
 
 =cut
-

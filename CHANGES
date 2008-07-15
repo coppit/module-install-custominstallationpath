@@ -1,3 +1,9 @@
+Version 0.1040: Mon Jul 14 2008
+- Updated to the latest version of Module::Install
+- Removed auto-install for better compatibility with CPAN and others
+- Renamed Check_Custom_Installation to check_custom_installation to match
+	Module::Install style
+
 Version 0.1030: Tue Dec 21 2004
 - Fixed version numbers, which were incompatible with some modules. (Thanks to
   Tassilo von Parseval <tassilo.von.parseval@rwth-aachen.de> for the bug

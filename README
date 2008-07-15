@@ -6,15 +6,11 @@ custom installation directories
 
 NEW IN THIS VERSION
 
-Version 0.1030: Tue Dec 21 2004
-- Fixed version numbers, which were incompatible with some modules. (Thanks to
-  Tassilo von Parseval <tassilo.von.parseval@rwth-aachen.de> for the bug
-  report)
-- Improved the language in the prompt so that it isn't as confusing (Thanks to
-  Randal L. Schwartz <merlyn@stonehenge.com> for the suggestion.)
-- Added a warning in the docs about whether one should use this module or not,
-  given that there are other known methods for setting custom installation
-  options.
+Version 0.1040: Mon Jul 14 2008
+- Updated to the latest version of Module::Install
+- Removed auto-install for better compatibility with CPAN and others
+- Renamed Check_Custom_Installation to check_custom_installation to match
+  Module::Install style
 
 
 MODULE DEPENDENCIES
@@ -24,8 +20,10 @@ To use this module, you will need to install:
 - File::HomeDir
 - Module::Install
 
-You should be prompted to install this module automatically when you run "perl
-Makefile.PL".
+To test this module, you will need to install:
+
+- IO::CaptureOutput
+- Test::More
 
 
 INSTALLATION
@@ -52,7 +50,7 @@ example:
   use lib '/home/userid/lib';
   use ext::Module::Install;
   ...
-  Check_Custom_Installation();
+  check_custom_installation();
 
 
 INSTALLATION PROBLEMS
@@ -76,7 +74,11 @@ Unix systems, you can also do "man Module::Install::CustomInstallationPath".
 
 HOMEPAGE
 
-Visit http://coppit.org/code/ for the latest version.
+The CPAN Page:
+http://search.cpan.org/~dcoppit/Module-Install-CustomInstallationPath/
+
+The Google Code page:
+http://code.google.com/p/module-install-custominstallationpath/
 
 
 REPORTING BUGS
@@ -86,14 +88,15 @@ Send email to David Coppit <david@coppit.org>.
 
 COPYRIGHT
 
-Copyright (c) 2004 David Coppit. All rights reserved, save those granted by
-the license.
+Copyright (c) David Coppit. All rights reserved, save those granted by the
+license.
 
 
 LICENSE
 
-This code is distributed under the GNU General Public License (GPL).  See
-http://www.opensource.org/gpl-license.html and http://www.opensource.org/.
+This code is distributed under the GNU General Public License (GPL). See the
+file LICENSE in the distribution, http://www.opensource.org/gpl-license.html,
+and http://www.opensource.org/.
 
 
 AUTHOR
