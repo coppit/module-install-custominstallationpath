@@ -1,11 +1,6 @@
 This file is not distributed with the module. It outlines some notes for
 developers readying a set of files for distribution.
 
-TODO:
-- When Google support svn dumpfile imports
-	(http://code.google.com/hosting/faq.html#importdump), use the svndump file
-	to import the old repository.
-
 Subversion CHECKOUT:
 $ svn co https://module-install-custominstallationpath.googlecode.com/svn/trunk/ Module-Install-CustomInstallationPath
 
@@ -38,7 +33,7 @@ Checklist for a release:
 - Upload to server:
   $ scp Module-Install-CustomInstallationPath-X.XX.tar.gz dcoppit@coppit.org:www/coppit/html/code
 - Update webpage:
-  $ ssh -t dcoppit@coppit.org 'cd www/coppit/source; vim code/index.raw; gmake'
+  $ ssh -t dcoppit@coppit.org 'vim www/coppit/html/code/index.php'
 - Announce it to comp.lang.perl.announce
 - Copy current code to old in devel
   $ rm -rf old; rsync -r --cvs-exclude --exclude=.svn * old

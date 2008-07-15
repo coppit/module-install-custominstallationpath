@@ -1,4 +1,4 @@
-Module::Install:CustomInstallationPath 0.10 released
+Module::Install::CustomInstallationPath 0.1000 released
 
 Description:
 - Module::Install::CustomInstallationPath is a Module::Install extension that
@@ -6,9 +6,9 @@ Description:
 
 Download:
 - You can download the module from CPAN:
-  http://www.cpan.org/authors/id/D/DC/DCOPPIT/Module-Install-CustomInstallationPath-0.10.tar.gz
+  http://www.cpan.org/authors/id/D/DC/DCOPPIT/Module-Install-CustomInstallationPath-0.1000.tar.gz
 - Until the file propagates to the mirrors, you can use the following URL:
-  http://coppit.org/code/Module-Install-CustomInstallationPath-0.10.tar.gz
+  http://coppit.org/code/Module-Install-CustomInstallationPath-0.1000.tar.gz
 
 Changes:
 - This is the first release
