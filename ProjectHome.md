@@ -1,0 +1,1 @@
+This Module::Install extension interacts with the user during installation to determine whether the modules or programs being installed should be installed in the normal system-wide locations or custom locations.
