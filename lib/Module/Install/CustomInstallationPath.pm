@@ -1,7 +1,7 @@
 package Module::Install::CustomInstallationPath;
 
 use strict;
-use 5.004;
+use 5.005;
 use File::HomeDir;
 use Config;
 

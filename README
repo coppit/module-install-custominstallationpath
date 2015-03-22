@@ -4,15 +4,6 @@ A Module::Install extension that allows the user to interactively specify
 custom installation directories
 
 
-NEW IN THIS VERSION
-
-Version 0.1040: Mon Jul 14 2008
-- Updated to the latest version of Module::Install
-- Removed auto-install for better compatibility with CPAN and others
-- Renamed Check_Custom_Installation to check_custom_installation to match
-  Module::Install style
-
-
 MODULE DEPENDENCIES
 
 To use this module, you will need to install:
@@ -75,7 +66,7 @@ Unix systems, you can also do "man Module::Install::CustomInstallationPath".
 HOMEPAGE
 
 The CPAN Page:
-http://search.cpan.org/~dcoppit/Module-Install-CustomInstallationPath/
+http://search.cpan.org/dist/Module-Install-CustomInstallationPath/
 
 The Google Code page:
 http://code.google.com/p/module-install-custominstallationpath/
@@ -83,7 +74,7 @@ http://code.google.com/p/module-install-custominstallationpath/
 
 REPORTING BUGS
 
-Send email to David Coppit <david@coppit.org>.
+http://code.google.com/p/module-install-custominstallationpath/issues/entry
 
 
 COPYRIGHT
