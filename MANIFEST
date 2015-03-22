@@ -9,6 +9,7 @@ lib/Module/Install/CustomInstallationPath.pm
 
 # Tests
 t/01-basic.t
+t/pod.t
 
 # Module::Install extensions
 inc/Module/Install.pm
