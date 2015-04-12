@@ -2,10 +2,15 @@
 
 use strict;
 use inc::Module::Install;
+use File::Slurp;
 
 all_from('lib/Module/Install/CustomInstallationPath.pm');
 
 githubmeta;
+
+include(
+  'File::Slurp' => 0,
+);
 
 requires(
   'File::HomeDir' => 0,
@@ -19,3 +24,9 @@ license 'gpl2';
 auto_license(holder => 'David Coppit');
 
 WriteAll();
+
+if (auto_tester) {
+  my $makefile = read_file('Makefile');
+  $makefile =~ s/TEST_VERBOSE\s*=\s*0/TEST_VERBOSE=1/ or die "Couldn't enable verbose mode in Makefile";
+  write_file('Makefile', $makefile);
+}
