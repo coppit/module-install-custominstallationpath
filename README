@@ -63,7 +63,7 @@ Just "perldoc Module::Install::CustomInstallationPath". After installation on
 Unix systems, you can also do "man Module::Install::CustomInstallationPath".
 
 
-HOMEPAGE
+RESOURCES
 
 The CPAN Page:
 http://search.cpan.org/dist/Module-Install-CustomInstallationPath/
@@ -71,10 +71,8 @@ http://search.cpan.org/dist/Module-Install-CustomInstallationPath/
 The GitHub page:
 https://github.com/coppit/module-install-custominstallationpath/
 
-
-REPORTING BUGS
-
-https://github.com/coppit/module-install-custominstallationpath/issues
+Bug and feature tracking:
+http://rt.cpan.org/Public/Dist/Display.html?Name=Module-Install-CustomInstallationPath
 
 
 COPYRIGHT
