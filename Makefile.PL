@@ -5,6 +5,8 @@ use inc::Module::Install;
 
 all_from('lib/Module/Install/CustomInstallationPath.pm');
 
+githubmeta;
+
 requires(
   'File::HomeDir' => 0,
 );
