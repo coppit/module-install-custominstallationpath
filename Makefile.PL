@@ -13,6 +13,7 @@ auto_set_bugtracker;
 githubmeta;
 
 requires(
+  'Module::Install' => 0, 
   'File::HomeDir' => 0,
 );
 

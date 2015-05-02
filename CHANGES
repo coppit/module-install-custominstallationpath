@@ -1,5 +1,7 @@
 Version 0.1044:
 - Prevent CPAN from indexing private-lib
+- Add Module::Install requirement
+  http://www.cpantesters.org/cpan/report/cf8da780-e798-11e4-b042-71cc062ccc87
 
 Version 0.1043: Mon Apr 20 2015
 - Clarify licensing terms
