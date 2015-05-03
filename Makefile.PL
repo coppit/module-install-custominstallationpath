@@ -18,6 +18,7 @@ requires(
 );
 
 test_requires(
+  'Test::Compile' => 0,
   'Test::More' => 0,
 );
 
@@ -27,5 +28,7 @@ auto_license(holder => 'David Coppit');
 no_index 'directory' => 'private-lib';
 
 enable_verbose_cpan_testing();
+
+use_standard_tests;
 
 WriteAll();

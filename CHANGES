@@ -1,4 +1,7 @@
-Version 0.1044:
+Version 0.1045:
+- Add standard tests
+
+Version 0.1044: Sat May 2 2015
 - Prevent CPAN from indexing private-lib
 - Add Module::Install requirement
   http://www.cpantesters.org/cpan/report/cf8da780-e798-11e4-b042-71cc062ccc87
